@@ -15,7 +15,6 @@ run/main_scene="uid://gpks3vpxu57b"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
-<<<<<<< HEAD
 [input]
 
 CTR-Action={
@@ -54,8 +53,6 @@ Shift-Action={
 ]
 }
 
-=======
->>>>>>> parent of 46992fe (Basic Movement Keybinds)
 [physics]
 
 3d/physics_engine="Jolt Physics"
