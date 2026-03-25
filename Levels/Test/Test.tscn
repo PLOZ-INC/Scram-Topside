@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://gpks3vpxu57b"]
+
+[ext_resource type="PackedScene" uid="uid://uhtg30uikphp" path="res://Scenes/Player.tscn" id="1_pc5pm"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pc5pm"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w0orh"]
+distance = -647.0
+
+[node name="Test" type="Node2D" unique_id=24621033]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1194047038]
+physics_material_override = SubResource("PhysicsMaterial_pc5pm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=558454157]
+shape = SubResource("WorldBoundaryShape2D_w0orh")
+
+[node name="Player" parent="." unique_id=1611946741 instance=ExtResource("1_pc5pm")]
+position = Vector2(333, 534)
