@@ -19,3 +19,18 @@ shape = SubResource("RectangleShape2D_dewec")
 [node name="SubViewport" type="SubViewport" parent="." unique_id=2030372367]
 snap_2d_transforms_to_pixel = true
 snap_2d_vertices_to_pixel = true
+
+[node name="Dashing" type="Timer" parent="." unique_id=573143163]
+wait_time = 0.2
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1079117585]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="Dash_Timer" type="Timer" parent="." unique_id=1028338696]
+wait_time = 3.0
+
+[connection signal="timeout" from="Dashing" to="." method="_on_dashing_timeout"]
+[connection signal="timeout" from="Dash_Timer" to="." method="_on_dash_timer_timeout"]

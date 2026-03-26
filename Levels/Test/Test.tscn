@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://gpks3vpxu57b"]
 
 [ext_resource type="PackedScene" uid="uid://uhtg30uikphp" path="res://Scenes/Player.tscn" id="1_pc5pm"]
+[ext_resource type="Texture2D" uid="uid://bg4o6ul61le7u" path="res://Assets/Backgrounds/Speed testing.png" id="2_w0orh"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pc5pm"]
 
@@ -15,5 +16,12 @@ physics_material_override = SubResource("PhysicsMaterial_pc5pm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=558454157]
 shape = SubResource("WorldBoundaryShape2D_w0orh")
 
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1191922560]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1763106285]
+position = Vector2(-0.00012207031, -3.0517578e-05)
+scale = Vector2(8.193603, 6.4823527)
+texture = ExtResource("2_w0orh")
+
 [node name="Player" parent="." unique_id=1611946741 instance=ExtResource("1_pc5pm")]
-position = Vector2(333, 534)
+position = Vector2(566, 217)
