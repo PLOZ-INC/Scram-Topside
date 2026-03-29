@@ -19,8 +19,8 @@ shape = SubResource("WorldBoundaryShape2D_w0orh")
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1191922560]
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1763106285]
-position = Vector2(762, 532.99994)
-scale = Vector2(8.193603, 6.4823527)
+position = Vector2(705, 305)
+scale = Vector2(11.076599, 12.05294)
 texture = ExtResource("2_w0orh")
 
 [node name="Player" parent="." unique_id=1611946741 instance=ExtResource("1_pc5pm")]
