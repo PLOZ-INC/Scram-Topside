@@ -16,8 +16,9 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("spacebar-move") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		#F=MA
 	
-	#Dashing controll
+	#Dashing control
 	if Input.is_action_just_pressed("ctr-action") :
 		if dash_variable == true:
 			dash = true
