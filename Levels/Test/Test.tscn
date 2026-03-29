@@ -6,7 +6,7 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pc5pm"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w0orh"]
-distance = -647.0
+distance = -1081.0
 
 [node name="Test" type="Node2D" unique_id=24621033]
 
@@ -19,7 +19,7 @@ shape = SubResource("WorldBoundaryShape2D_w0orh")
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1191922560]
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1763106285]
-position = Vector2(-0.00012207031, -3.0517578e-05)
+position = Vector2(762, 532.99994)
 scale = Vector2(8.193603, 6.4823527)
 texture = ExtResource("2_w0orh")
 
